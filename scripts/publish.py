@@ -20,7 +20,7 @@ def calculate_day_number():
     if START_DATE_STR:
         start = date.fromisoformat(START_DATE_STR)
     else:
-        start = date(2026, 10, 5)
+        start = date(2026, 10, 4)
     today = datetime.now(TR_TZ).date()
     return (today - start).days + 1
 
