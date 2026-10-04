@@ -1,0 +1,281 @@
+day,file,title,description
+"1","01-emails-to-spam-gmail/01-emails-to-spam-gmail.mp4","Why Your Emails Go To Spam In Gmail","Free external scan: https://threatport.com/#hero-scan
+
+Gmail is not reading your writing and deciding you sound like a spammer. It is checking whether the message can be proved to come from your domain. That proof is three DNS records — SPF, DKIM and DMARC. If they are incomplete, Gmail has nothing to verify and the safe assumption is the spam folder.
+
+Fix the records before you rewrite the subject line. One is the cause, the other is not.
+
+#emailmarketing #deliverability #gmail #smallbusiness #cybersecurity #smallbusiness #infosec"
+"2","02-invoice-fraud/02-invoice-fraud.mp4","Anyone Can Send Email As Your Company Until You Fix This","Free external scan: https://threatport.com/#hero-scan
+
+Invoice fraud usually does not start with a hack. It starts with a domain that never finished its email setup. Three DNS records decide who is allowed to send mail as your company: SPF, DKIM and DMARC. If DMARC is missing, or set to p=none, it reports abuse but blocks nothing.
+
+Check your DMARC record today, then check the rest of your domain from the outside.
+
+#emailsecurity #dmarc #phishing #businessowner #cybersecurity #smallbusiness #infosec"
+"3","03-lookalike-domains/03-lookalike-domains.mp4","A Domain That Looks Like Yours Is Not Yours","Free external scan: https://threatport.com/#hero-scan
+
+Lookalike domains work because reading is not the same as checking. An r followed by an n reads as an m. A hyphen looks deliberate. A different ending looks like a regional site. Attackers register these variants, copy your design, and wait for a rushed customer.
+
+List the closest variants of your own domain and register the ones that matter.
+
+#typosquatting #brandprotection #phishing #domains #cybersecurity #smallbusiness #infosec"
+"4","04-someone-sends-as-me/04-someone-sends-as-me.mp4","Someone Is Sending Emails From My Email Address","Free external scan: https://threatport.com/#hero-scan
+
+This is the most misdiagnosed problem in small business email. In most cases nobody broke into the mailbox. Email lets any sender write any address in the from field — that is how the protocol works. What decides whether the world accepts it is your domain's records, not your password.
+
+Change the password if you want to. Fix the DMARC record if you want it to stop.
+
+#emailsecurity #dmarc #phishing #smallbusiness #cybersecurity #smallbusiness #infosec"
+"5","05-forgotten-servers/05-forgotten-servers.mp4","The Test Server You Forgot Is Still Online","Free external scan: https://threatport.com/#hero-scan
+
+Almost every company has one: a test site, a demo, a staging copy, or a backup that somebody set up for a project that ended. It is still reachable from the internet and nobody applies updates to it. Attackers do not go after your strongest system. They look for the one nobody is watching.
+
+Give every internet facing asset an owner, or a date when it gets switched off.
+
+#attacksurface #shadowit #itsecurity #smallbusiness #cybersecurity #smallbusiness #infosec"
+"6","06-website-security-checklist/06-website-security-checklist.mp4","Website Security Checklist","Free external scan: https://threatport.com/#hero-scan
+
+A website is a stack, not a thing. The checklist runs: certificate validity across every hostname, current software versions, restricted access to the admin area, response security headers, and backups that somebody has actually restored. The last item is the one that turns a checklist into a real answer — knowing every hostname you run.
+
+Start from the hostname list. Everything else is unverifiable without it.
+
+#websecurity #devops #sysadmin #infosec #cybersecurity #smallbusiness #infosec"
+"7","07-is-this-email-safe/07-is-this-email-safe.mp4","How To Check If An Email Is Safe To Open","Free external scan: https://threatport.com/#hero-scan
+
+Opening a message is rarely where the harm happens. The risk sits in what it asks for next — a click, a download, a confirmation. Three signals do most of the work: it arrived unexpectedly, it is urgent, and it wants money or a login.
+
+Read the real sender address, not the display name. When money is involved, call a number you already had.
+
+#phishing #cyberawareness #emailsecurity #businessowner #cybersecurity #smallbusiness #infosec"
+"8","08-password-reuse/08-password-reuse.mp4","Password Reuse Is How Small Businesses Get Breached","Free external scan: https://threatport.com/#hero-scan
+
+The password protecting your business is probably used somewhere else — not by an attacker, by your own team on their own accounts. When that other site is breached, the password travels with it. Nobody has to break in. They log in.
+
+A password manager costs less than one afternoon of incident response.
+
+#passwordmanager #cyberawareness #smallbusiness #infosec #cybersecurity #smallbusiness #infosec"
+"9","09-former-employees/09-former-employees.mp4","People Who Left Your Company Still Have Access","Free external scan: https://threatport.com/#hero-scan
+
+Offboarding usually covers email and little else. The shared inbox, the cloud storage, the analytics account, the old admin panel — those stay open because nobody wrote them down. This is rarely malicious. It is almost always just forgotten.
+
+Build an offboarding list of every system, not just the mailbox.
+
+#accesscontrol #itsecurity #smallbusiness #hr #cybersecurity #smallbusiness #infosec"
+"10","10-wordpress-best-practices/10-wordpress-best-practices.mp4","WordPress Security Best Practices","Free external scan: https://threatport.com/#hero-scan
+
+WordPress core is maintained and patched quickly. The risk is what gets added to it: plugins and themes written by third parties, and administrator accounts nobody removed. The dangerous plugin is usually not the outdated one — it is the abandoned one, where no fix is coming at all.
+
+Delete what you do not use. Deactivated is not the same as removed.
+
+#wordpress #websecurity #webdev #infosec #cybersecurity #smallbusiness #infosec"
+"11","11-is-this-link-safe/11-is-this-link-safe.mp4","How To Check If A Link Is Safe To Click","Free external scan: https://threatport.com/#hero-scan
+
+Link text and link destination are two different things. The readable part can say anything. The address that matters is the domain sitting immediately before the first slash — read it from the right, not the left. Shortened links remove even that, which is why an unexpected short link deserves no benefit of the doubt.
+
+If it arrived unexpectedly, type the address in yourself instead of clicking.
+
+#phishing #cyberawareness #onlinesafety #infosec #cybersecurity #smallbusiness #infosec"
+"12","12-expired-certificate/12-expired-certificate.mp4","One Expired Certificate Sends Customers Away","Free external scan: https://threatport.com/#hero-scan
+
+When a TLS certificate expires, the browser stops showing your site and starts showing a warning that it is unsafe. Most visitors will not click through that screen. Certificates do not only sit on your main website — they sit on subdomains, checkout pages and mail servers too.
+
+Track expiry dates across every hostname you own, not just the obvious one.
+
+#ssl #websitesecurity #ecommerce #smallbusiness #cybersecurity #smallbusiness #infosec"
+"13","13-exposed-remote-access/13-exposed-remote-access.mp4","Remote Access Left Open To The Whole Internet","Free external scan: https://threatport.com/#hero-scan
+
+Remote access is usually opened for a good reason and then never closed. The problem is who it is open to. Not your team — the entire public internet. Automated scanners map newly exposed services continuously, which is why these get found quickly.
+
+Remote access belongs behind a login or a private network, never directly on the internet.
+
+#networksecurity #remotework #itsecurity #cyberawareness #cybersecurity #smallbusiness #infosec"
+"14","14-is-my-website-safe/14-is-my-website-safe.mp4","Is My Website Safe? How To Check It Yourself","Free external scan: https://threatport.com/#hero-scan
+
+A padlock means the connection is encrypted. It says nothing about whether the site is safe. Three things actually decide it: whether the certificate is valid, whether the software behind it is current, and what else on the same domain is reachable from the internet.
+
+Check it from outside, the way a stranger reaches it — not from your admin login.
+
+#websecurity #ssl #smallbusiness #infosec #cybersecurity #smallbusiness #infosec"
+"15","15-fake-pages/15-fake-pages.mp4","A Fake Page Can Wear Your Brand Perfectly","Free external scan: https://threatport.com/#hero-scan
+
+Copying a website takes minutes. A fake page can carry your logo, your colours and your exact wording, then ask your customers for the details they already trust you with. Usually the business finds out when a customer calls to ask whether it was real.
+
+Watch for pages using your brand so the gap between launch and discovery gets shorter.
+
+#phishing #brandprotection #cyberawareness #businessowner #cybersecurity #smallbusiness #infosec"
+"16","16-active-directory-checklist/16-active-directory-checklist.mp4","Active Directory Security Best Practices Checklist","Free external scan: https://threatport.com/#hero-scan
+
+Active Directory is where a local mistake turns into a domain-wide one. The checklist starts with counting: how many accounts actually hold privilege, how many objects are stale, and what delegation exists that nobody remembers granting. Service accounts deserve particular attention, because they are the ones that never get reviewed.
+
+Count who holds privilege first. In most environments the number is a surprise.
+
+#activedirectory #sysadmin #windowsserver #infosec #cybersecurity #smallbusiness #infosec"
+"17","17-business-email-hacked/17-business-email-hacked.mp4","What To Do If Your Business Email Is Hacked","Free external scan: https://threatport.com/#hero-scan
+
+Order matters more than speed. Change the password, remove any extra access that was granted, and then check the forwarding and inbox rules — because attackers routinely add a rule that quietly copies mail elsewhere, and that rule survives the password change everyone remembers to do.
+
+Then warn anyone who might have received a payment request while the account was open.
+
+#emailsecurity #incidentresponse #businessowner #infosec #cybersecurity #smallbusiness #infosec"
+"18","18-leaked-passwords/18-leaked-passwords.mp4","Your Password Leaked Somewhere Else And Still Works Here","Free external scan: https://threatport.com/#hero-scan
+
+Credential exposure rarely comes from your own systems. Someone on your team used their work email on another site, that site was breached, and the password ended up in a public list. Nobody has to guess anything. They simply try what already leaked.
+
+Find out which of your company email addresses appear in known breach data.
+
+#databreach #passwordsecurity #cyberawareness #infosec #cybersecurity #smallbusiness #infosec"
+"19","19-shadow-it/19-shadow-it.mp4","Shadow IT: Tools Your Team Bought Without Telling You","Free external scan: https://threatport.com/#hero-scan
+
+Someone launches a landing page, a form, or a booking tool using a company card, a work email and your brand name. It never felt like an IT decision, so IT never heard about it. That asset is now part of your public footprint but not part of your inventory, your backups or your reviews.
+
+Discover what carries your brand on the internet, rather than asking who set it up.
+
+#shadowit #saas #itsecurity #businessowner #cybersecurity #smallbusiness #infosec"
+"20","20-ad-tiering-model/20-ad-tiering-model.mp4","Active Directory Tiering Model Step By Step","Free external scan: https://threatport.com/#hero-scan
+
+Tiering exists for one reason: to stop a compromised workstation from becoming a compromised domain. Three tiers — domain, servers, workstations — and one rule between them: a higher tier credential never authenticates on a lower tier machine. The implementation order matters as much as the model.
+
+Separate accounts per tier first, then block cross-tier logon, then enforce. Enforcing first locks out your own administrators.
+
+#activedirectory #sysadmin #windowsserver #infosec #cybersecurity #smallbusiness #infosec"
+"21","21-emails-to-junk-outlook/21-emails-to-junk-outlook.mp4","Why Outlook Sends Your Emails To Junk","Free external scan: https://threatport.com/#hero-scan
+
+Outlook and Microsoft accounts check who you claim to be before they look at what you wrote. A domain with no sending history and no authentication records looks, from the outside, exactly like a domain set up to send spam — because that is what those domains look like too.
+
+Set up authentication before the first campaign, not after the first complaint.
+
+#outlook #emailmarketing #deliverability #businessowner #cybersecurity #smallbusiness #infosec"
+"22","22-outdated-software/22-outdated-software.mp4","The Plugin Nobody Updated Is The Way In","Free external scan: https://threatport.com/#hero-scan
+
+Every plugin and extension on your website is software, and software gets security fixes. When a fix is published, the problem it solves becomes public knowledge at the same moment. That is when unpatched sites become easy to find.
+
+Treat updates as security work with a schedule, not as optional maintenance.
+
+#wordpress #patching #websecurity #smallbusiness #cybersecurity #smallbusiness #infosec"
+"23","23-subdomain-takeover/23-subdomain-takeover.mp4","Your Subdomain Can Be Claimed By A Stranger","Free external scan: https://threatport.com/#hero-scan
+
+When you stop using a hosted service, the DNS record pointing at it often stays. The name still resolves, but nobody owns the other end any more. Whoever claims that space next controls a page served on your subdomain — and to a browser, and to your customers, it is genuinely yours.
+
+When you retire a service, remove the DNS record that points to it.
+
+#dns #subdomaintakeover #websecurity #infosec #cybersecurity #smallbusiness #infosec"
+"24","24-is-this-attachment-safe/24-is-this-attachment-safe.mp4","How To Check If An Email Attachment Is Safe","Free external scan: https://threatport.com/#hero-scan
+
+The invoice attachment is the oldest trick in business email and it still works, because invoices are normal. The tell is the request: a document that asks you to enable content is not preparing to show you something, it is asking for permission to run.
+
+Preview in the browser rather than opening on your machine, and call the supplier before changing any bank details.
+
+#phishing #invoicefraud #cyberawareness #smallbusiness #cybersecurity #smallbusiness #infosec"
+"25","25-admin-panels/25-admin-panels.mp4","Your Admin Login Should Not Be Public","Free external scan: https://threatport.com/#hero-scan
+
+Most business tools ship with an administration page reachable from the internet, protected by a password and often nothing else. Anyone in the world can load that page and start trying combinations. A password on its own is not access control.
+
+Limit who can reach the panel, require a second factor, and watch failed logins.
+
+#accesscontrol #mfa #websecurity #infosec #cybersecurity #smallbusiness #infosec"
+"26","26-api-security-checklist/26-api-security-checklist.mp4","API Security Best Practices Checklist","Free external scan: https://threatport.com/#hero-scan
+
+APIs get less scrutiny than web pages because there is no login screen to look at. The recurring failures are not break-ins: they are endpoints that authenticate correctly and then return far more than the caller needed, and endpoints with no rate limit, where one valid key can read the whole dataset slowly enough to look normal.
+
+Document every endpoint. The undocumented ones are still serving traffic.
+
+#api #appsec #devsecops #infosec #cybersecurity #smallbusiness #infosec"
+"27","27-small-business-checklist/27-small-business-checklist.mp4","Small Business Cyber Security Checklist","Free external scan: https://threatport.com/#hero-scan
+
+Small business security is less about spending and more about sequence. Multi factor authentication first, because it removes the largest category of incident. Then finish the email authentication records. Then update everything. Then remove the access nobody uses. Then find out what is exposed that you never listed.
+
+Work through it in that order. Most of it costs nothing but an afternoon.
+
+#smallbusiness #cybersecuritytips #businessowner #infosec #cybersecurity #smallbusiness #infosec"
+"28","28-public-storage/28-public-storage.mp4","The Cloud Folder You Made Public And Forgot","Free external scan: https://threatport.com/#hero-scan
+
+Cloud storage is easier to share than to secure. A folder gets opened up to send one file quickly, the file goes out, and the folder stays public. Everything added to it afterwards inherits that setting automatically.
+
+Review what your company actually shares publicly, not what you intended to share.
+
+#cloudsecurity #dataprotection #itsecurity #businessowner #cybersecurity #smallbusiness #infosec"
+"29","29-exposed-files/29-exposed-files.mp4","The Files Your Website Serves By Accident","Free external scan: https://threatport.com/#hero-scan
+
+Configuration and backup files sometimes get published alongside the site itself. They can carry database details, keys and passwords in plain text. Nothing links to them, so nobody notices — but a link is not required to reach a file that is publicly served.
+
+Check what your own domain serves, from outside your network.
+
+#websecurity #devops #infosec #misconfiguration #cybersecurity #smallbusiness #infosec"
+"30","30-dns-best-practices/30-dns-best-practices.mp4","DNS Security Best Practices","Free external scan: https://threatport.com/#hero-scan
+
+DNS decides where your name points, which means everything else — mail, web, certificates — follows from it. The registrar login is arguably the most valuable account a company holds, and it is routinely the least protected. After that comes the zone itself: records outlive the projects that created them.
+
+Lock the domain, put MFA on the registrar, then read your own zone and delete what points nowhere.
+
+#dns #domains #sysadmin #infosec #cybersecurity #smallbusiness #infosec"
+"31","31-password-best-practices/31-password-best-practices.mp4","Password Best Practices That Actually Hold Up","Free external scan: https://threatport.com/#hero-scan
+
+Much of the password advice organisations still enforce has been reversed by the people who wrote it. Forced rotation every ninety days pushed users toward predictable patterns and made things worse. Current guidance favours length over symbol soup, uniqueness across services, and changing a password when there is an actual reason to.
+
+A password manager removes the reuse problem entirely, which is the one that actually causes breaches.
+
+#passwordmanager #cybersecuritytips #infosec #smallbusiness #cybersecurity #smallbusiness #infosec"
+"32","32-dns-leftovers/32-dns-leftovers.mp4","Old DNS Records Outlive What They Point To","Free external scan: https://threatport.com/#hero-scan
+
+Every campaign, trial and tool leaves a DNS record behind. The project ends, the record stays. Each leftover is a name on the internet carrying your company brand, pointing at something you no longer control.
+
+Read your own DNS once a year and delete what points nowhere.
+
+#dns #domains #itsecurity #infosec #cybersecurity #smallbusiness #infosec"
+"33","33-mfa-is-not-everything/33-mfa-is-not-everything.mp4","MFA Does Not Hide What You Already Expose","Free external scan: https://threatport.com/#hero-scan
+
+Multi factor authentication is one of the best changes a small company can make — for logins. It does nothing for the things that never show a login screen: forgotten servers, expired certificates, and files that are simply served to anyone who asks.
+
+Treat strong authentication and a small attack surface as two separate jobs.
+
+#mfa #cyberawareness #infosec #smallbusiness #cybersecurity #smallbusiness #infosec"
+"34","34-email-rules-for-employees/34-email-rules-for-employees.mp4","Email Security Best Practices For Employees","Free external scan: https://threatport.com/#hero-scan
+
+Most email training fails because it teaches people to be afraid rather than giving them rules they can apply. Three rules cover the majority of business email fraud: urgency is always a signal, any change to payment details is confirmed by phone, and reporting a mistake must never be punished.
+
+Make reporting safe. A team that fears blame will hide the click that matters.
+
+#securityawareness #training #businessowner #infosec #cybersecurity #smallbusiness #infosec"
+"35","35-supplier-risk/35-supplier-risk.mp4","Your Supplier Is Part Of Your Attack Surface","Free external scan: https://threatport.com/#hero-scan
+
+Your accountant, your agency and your booking tool all touch your data or can send mail on your behalf. Their security becomes part of yours. You do not need to audit them — you need to know who they are and what they can reach.
+
+Write down who holds your data and who can act as you. Keep it short and current.
+
+#supplychain #vendorrisk #businessowner #infosec #cybersecurity #smallbusiness #infosec"
+"36","36-github-actions-security/36-github-actions-security.mp4","GitHub Actions Security Best Practices","Free external scan: https://threatport.com/#hero-scan
+
+A workflow runs with access to whatever the repository can reach, including its secrets. Two things deserve attention: which third party actions you pull in, and how you pin them. A version tag is not a fixed reference — tags can be repointed at new code. Pinning the commit hash is what actually pins it.
+
+Pin commits, restrict which branches can trigger runs, and give the token the least permission the job needs.
+
+#github #devsecops #cicd #infosec #cybersecurity #smallbusiness #infosec"
+"37","37-what-happens-after-a-breach/37-what-happens-after-a-breach.mp4","What Happens When A Company Gets Hacked","Free external scan: https://threatport.com/#hero-scan
+
+The break-in is the short part. What follows is weeks of not being able to answer simple questions: what did we have, what was reachable, what was taken. Without a record of your own footprint, every answer to a customer, an insurer or a regulator starts as a guess.
+
+The work that shortens all of it is done before anything happens, not after.
+
+#databreach #cyberrisk #businessowner #infosec #cybersecurity #smallbusiness #infosec"
+"38","38-attacker-view/38-attacker-view.mp4","What Attackers Look At Before They Attack","Free external scan: https://threatport.com/#hero-scan
+
+An attack starts with looking, not touching. What you run, what is exposed, what appears out of date — all of it can be assembled from public sources without sending a single request to your systems, which is why nothing shows up in your logs.
+
+Look at the same picture they do, before they do.
+
+#osint #threatintelligence #attacksurface #infosec #cybersecurity #smallbusiness #infosec"
+"39","39-asset-inventory/39-asset-inventory.mp4","You Cannot Protect What You Never Listed","Free external scan: https://threatport.com/#hero-scan
+
+Most small companies do not have a security problem so much as a visibility problem. A spreadsheet of assets goes stale faster than the systems change, because assets appear without anyone filing a ticket. The list that holds up is the one built from the outside in.
+
+Start with the question an attacker starts with: what can I see from here?
+
+#assetmanagement #attacksurface #easm #itsecurity #cybersecurity #smallbusiness #infosec"
+"40","40-iis-best-practices/40-iis-best-practices.mp4","IIS Security Best Practices","Free external scan: https://threatport.com/#hero-scan
+
+IIS ships configured to serve content, not configured to be exposed. The defaults that matter are the ones that describe your environment to anyone who asks: version headers, default pages left in place, and directory browsing. None of them are exploits by themselves — they are the information that makes finding one faster.
+
+Turn off what you are not deliberately using, then check what the server actually returns from outside.
+
+#iis #windowsserver #sysadmin #websecurity #cybersecurity #smallbusiness #infosec"

@@ -1,0 +1,42 @@
+name: Daily ThreatPort Publish
+
+on:
+  schedule:
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+    inputs:
+      day:
+        description: "Force a specific day number (1-40). Leave empty for auto."
+        required: false
+        default: ""
+
+env:
+  START_DATE: "2026-10-05"
+  PUBLISH_YOUTUBE: "true"
+  PUBLISH_INSTAGRAM: "false"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Publish
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          IG_USERNAME: ${{ secrets.IG_USERNAME }}
+          IG_PASSWORD: ${{ secrets.IG_PASSWORD }}
+          IG_TOTP_CODE: ${{ secrets.IG_TOTP_CODE }}
+          VIDEOS_DIR: ${{ github.workspace }}
+        run: python scripts/publish.py

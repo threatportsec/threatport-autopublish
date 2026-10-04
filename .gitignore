@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+client_secret.json
+youtube_token.json
+.DS_Store
+scripts/__pycache__/
+*.mp4
